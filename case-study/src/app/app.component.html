@@ -1,0 +1,67 @@
+<ion-app>
+  <ion-menu side="start" contentId="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="menu-title">Car List App</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+        <ion-item routerLink="/home" routerDirection="root">
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/about" routerDirection="root">
+          <ion-icon slot="start" name="information-circle"></ion-icon>
+          <ion-label>About</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        <!-- add new item for top 10 car brands use accordion -->
+        <ion-item lines="none">
+          <ion-icon slot="start" name="car"></ion-icon>
+          <ion-label slot="start">Top 10 Car</ion-label>
+          <ion-accordion slot="end" [disabled]="false">
+          </ion-accordion>
+        </ion-item>
+        <ion-item-group>
+        <ion-menu-toggle>
+          <ion-item routerLink="toyota" routerDirection="root">
+            <ion-label>1. Toyota</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+          <ion-item routerLink="/top10/1" routerDirection="root">
+            <ion-label>2. Volkswagen</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/2" routerDirection="root">
+            <ion-label>3. General Motors</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/3" routerDirection="root">
+            <ion-label>4. Ford</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/4" routerDirection="root">
+            <ion-label>5. Hyundai</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/5" routerDirection="root">
+            <ion-label>6. Honda</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/6" routerDirection="root">
+            <ion-label>7. Nissan</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/7" routerDirection="root">
+            <ion-label>8. Kia</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/8" routerDirection="root">
+            <ion-label>9. Renault</ion-label>
+          </ion-item>
+          <ion-item routerLink="/top10/9" routerDirection="root">
+            <ion-label>10. Daimler</ion-label>
+          </ion-item>
+        </ion-item-group>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content"></ion-router-outlet>
+</ion-app>
