@@ -1,0 +1,44 @@
+* {
+    --ion-color-primary-rgb: 0, 0, 0;
+    --ion-color-primary-contrast: #fff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #000000;
+    --ion-color-primary-tint: #333333;
+}
+ion-card {
+    --background: rgb(251, 251, 251);
+    --color: #000;
+    --font-size: 18px;
+}
+ion-card-header {
+    --background: #fff;
+    --color: #000;
+    --font-weight: bold;
+    --font-size: 20px;
+}
+ion-card-content {
+    --background: #fff;
+    --color: #000;
+    --font-size: 18px;
+}
+ion-card-title {
+    --background: #fff;
+    --color: #000;
+    --font-size: 20px;
+    --font-weight: bold;
+}
+ion-card-subtitle {
+    --background: #fff;
+    --color: #000;
+    --font-size: 18px;
+}
+ion-card-content p {
+    --background: #fff;
+    --color: #000;
+    --font-size: 18px;
+}
+ion-card-content {
+    --background: #fff;
+    --color: #000;
+    --font-size: 18px;
+}

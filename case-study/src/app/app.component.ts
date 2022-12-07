@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  menuType: string = 'reveal';
+  menuType: string = 'expand';
+  menuPosition: string = 'left';
+  menuWidth: number = 250;
+  menuReveal: boolean = true;
+  menuPush: boolean = true;
+  menuOverlap: boolean = false;
+  menuShrink: boolean = false;
+  menuStatic: boolean = false;
+  menuStaticBack: boolean = false;
+
+
   constructor() {}
+
 }

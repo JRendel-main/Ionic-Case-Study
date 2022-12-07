@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -7,58 +7,63 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-  <!-- create cards for toyota models with pictures -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Toyota Corolla</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <img src="assets/toyota/corolla.jpg" alt="Toyota Corolla" />
-      <p>
-        The Toyota Corolla is a subcompact car produced by Toyota. It is
-        Toyota's best-selling nameplate worldwide, having sold over 44
-        million units globally as of 2019. It is produced in 30 countries and
-        territories, and is the best-selling car in the world since 1974.
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Toyota Camry</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <img src="assets/toyota/camry.jpg" alt="Toyota Camry" />
-      <p>
-        The Toyota Camry is an automobile sold internationally by the Japanese
-        manufacturer Toyota since 1982, spanning multiple generations.
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Toyota RAV4</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <img src="assets/toyota/rav4.jpg" alt="Toyota RAV4" />
-      <p>
-        The Toyota RAV4 is a compact crossover SUV (sport utility vehicle)
-        produced by the Japanese automobile manufacturer Toyota. Introduced in
-        1994 with the Toyota RAV4, the model was replaced in 2005 with the
-        second generation Toyota RAV4, and in 2012 with the third generation
-        Toyota RAV4.
-      </p>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Toyota Prius</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <img src="assets/toyota/toyota-prius.jpg" alt="Toyota Prius" />
-      <p>
-        The Toyota Prius is a full hybrid electric mid-size hatchback
-        manufactured and marketed by Toyota since 1997
-      </p>
-    </ion-card-content>
-  </ion-card>
+  <!-- create carouselle for toyota models with pictures and description -->
+  <ion-slides>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>1976</ion-card-title>
+          <ion-card-subtitle>Toyota Camary</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="assets/toyota/camry.jpg"/>
+          The Toyota Camry (XV70) is an executive car produced by Toyota. It is the
+          successor to the Toyota Avalon. The XV70 series went on sale in Japan on
+          March 30, 2017, and in North America on June 23, 2017.
+          <ion-button>
+            <ion-icon name="information-circle"></ion-icon>
+            Read More
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>2018</ion-card-title>
+          <ion-card-subtitle>Toyota Corolla</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="assets/toyota/corolla.jpg"/>
+          The Toyota Corolla (E170) is the eleventh generation of the Corolla
+          compact car introduced in 2013 by Toyota. The Corolla is a front-engine,
+          front-wheel-drive, four-door sedan. It is the first Corolla to be
+          produced in North America, at Toyota's plant in Georgetown, Kentucky.
+          <ion-button>
+            <ion-icon name="information-circle"></ion-icon>
+            Read More
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>2012</ion-card-title>
+          <ion-card-subtitle>Toyota RAV4</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="assets/toyota/rav4.jpg"/>
+          The Toyota RAV4 (XA40) is the third generation of the RAV4 compact SUV
+          produced by Toyota. It was unveiled at the 2012 Paris Motor Show and
+          went on sale in Japan in November 2012, in Europe in January 2013, and
+          in North America in March 2013.<br>
+          <ion-button>
+            <ion-icon name="information-circle"></ion-icon>
+            Read More
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

@@ -1,6 +1,17 @@
-.titletop {
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    margin-bottom: 1rem;
-}
+ion-menu {
+    --background: white;
+    --color: #333333;
+  }
+  
+  ion-list {
+    background-color: var(--background);
+    padding: 0;
+  }
+  
+  ion-item {
+    color: var(--color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+  }
+  
