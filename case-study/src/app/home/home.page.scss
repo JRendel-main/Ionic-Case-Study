@@ -1,3 +1,40 @@
 * {
-  
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
+ion-card {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+ion-card-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+ion-card-content {
+  font-size: 1.2em;
+  color: #000;
+}
+ion-card-subtitle {
+  font-size: 1em;
+  color: #000;
+}
+ion-card-title {
+  font-size: 1.5em;
+  color: #000;
+}
+ion-card-subtitle {
+  font-size: 1em;
+  color: #000;
+}
+ion-card-title {
+  font-size: 1.5em;
+  color: #000;
+}
+ion-card-subtitle {
+  font-size: 1em;
+  color: #000;
+}
+
+

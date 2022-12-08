@@ -6,27 +6,17 @@
         <ion-title>Home</ion-title>
     </ion-toolbar>
 </ion-header>
-<ion-content>
-    <!-- add home page news about cars -->
-    <ion-card>
+<ion-content class="ion-padding" fullscreen="true">
+    <ion-card *ngFor="let news of carNews">
         <ion-card-header>
-            <ion-card-title>Car News</ion-card-title>
+            <ion-card-subtitle>{{news.date}}</ion-card-subtitle>
+            <ion-card-title>{{news.title}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <p>Toyota is the world's largest automaker by sales volume. It is also the world's largest manufacturer of hybrid electric vehicles, and one of the largest companies to encourage the mass-market adoption of hybrid vehicles across the globe.</p>
+          <ion-img [src]="news.image"></ion-img>
+            <p>{{news.description}}</p>
         </ion-card-content>
+<!--      create button for read more and open link-->
+        <ion-button expand="full" color="warning" (click)="openLink(news.link)">Read More</ion-button>
     </ion-card>
-
-  <a href="/about.html">About Page</a>
-
-  <a href="/services.html">Our Services</a>
-
-
-    <a href="/contact.html">Contact Us</a>
-
-    <a href="/about.html">About Page</a>
-
-    <a href="/services.html">Our Services</a>
-
-    <a href="/contact.html">Contact Us</a>
 </ion-content>
